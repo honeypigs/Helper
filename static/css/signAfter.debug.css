@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0 auto;
+  margin-top: 1.706667rem;
   width: 10rem;
   height: 16.08rem;
   background: url(../img/bg2.png);
@@ -13,7 +14,7 @@ body {
 
 form {
   position: absolute;
-  top: 4.986667rem;
+  top: 3.253333rem;
   width: 100%;
 }
 
