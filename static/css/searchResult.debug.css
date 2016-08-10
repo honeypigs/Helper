@@ -20,78 +20,13 @@ div {
   border-radius: 0.133333rem;
 }
 
-.top-wp {
-  height: 1.16rem;
-  position: relative;
-  background: rgba(0,0,0,0);
-}
-
-.top {
-  position: absolute;
-  top: 0.4rem;
-  background: rgba(255,255,255,.3);
-  height: 0.893333rem;
-  border: 0.026667rem solid #41affb;
-  font-size: 0.32rem;
-  color: #41affb;
-  text-align: center;
-  line-height: 0.893333rem;
-}
-
-.top .top-left {
-  float: left;
-  width: 50%;
-  height: 100%;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.top .top-right {
-  float: left;
-  width: 50%;
-  height: 100%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.top .click {
-  background: #76c5fc;
-  color: #fff;
-}
-
-.search-box {
-  height: 0.893333rem;
-  margin-top: 0.4rem;
-}
-
-.search-box img {
-  display: block;
-  float: left;
-  height: 0.4rem;
-  margin: 0.24rem;
-  margin-right: 0;
-}
-
-.search-box input {
-  float: right;
-  font-size: 0.373333rem;
-  color: #a6a6a6;
-  margin: 0;
-  width: 8.4rem;
-  height: 0.893333rem;
-  border: 0;
-  background-color: rgba(0,0,0,0);
-  outline: 0;
-  padding: 0;
-}
-
 .content {
-  background: rgba(255,255,255,.5);
-  text-decoration: none;
-  display: block;
-  margin: 0 auto;
   width: 9.2rem;
+  margin: 0 auto;
+  display: block;
   overflow: hidden;
+  text-decoration: none;
+  background: rgba(255,255,255,.5);
   margin-top: 0.4rem;
   min-height: 2.666667rem;
   border: 0.013333rem solid #a9e4ef;
@@ -229,6 +164,6 @@ footer div img {
   height: 0.64rem;
 }
 
-footer .index a {
+footer .search a {
   color: #54ccf9;
 }

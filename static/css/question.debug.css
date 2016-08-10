@@ -133,8 +133,8 @@ hr {
 
 .addPics .pic .delet {
   position: absolute;
-  right: -0.173333rem;
-  top: -0.173333rem;
+  right: -0.24rem;
+  top: -0.24rem;
   height: 0.48rem;
   width: 0.48rem;
   border-radius: 50%;
@@ -179,7 +179,6 @@ button {
   border: 0;
   padding: 0;
   outline: 0;
-  border-radius: 0.133333rem;
   background-color: rgba(0,0,0,0);
   font-size: 0.453333rem;
   color: #fff;
