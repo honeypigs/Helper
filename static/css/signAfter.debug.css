@@ -8,7 +8,7 @@ body {
   width: 10rem;
   height: 16.08rem;
   background: url(../img/bg2.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100%;
 }
 
@@ -16,6 +16,10 @@ form {
   position: absolute;
   top: 3.253333rem;
   width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 form img {
@@ -62,7 +66,8 @@ form p {
   color: #50cde4;
   font-size: 0.32rem;
   width: 7.693333rem;
-  margin-left: 1.173333rem;
+  margin: 0 auto;
+  margin-top: 0.266667rem;
 }
 
 form button {
@@ -82,7 +87,7 @@ form button {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   height: 1.333333rem;
@@ -90,13 +95,8 @@ footer {
   background-color: #fff;
 }
 
-footer div:last-child {
-  color: #54ccf9;
-}
-
 footer div {
   font-size: 0.266667rem;
-  color: #8f8f8f;
   text-align: center;
   float: left;
   width: 25%;
@@ -108,4 +108,16 @@ footer div img {
   margin-top: 0.16rem;
   margin-bottom: 0.133333rem;
   height: 0.64rem;
+}
+
+footer div a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #8f8f8f;
+}
+
+footer .user a {
+  color: #54ccf9;
 }
