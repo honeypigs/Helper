@@ -33,7 +33,7 @@ body {
 
 .userMassage .text .userSex {
   float: right;
-  background-color: #2fbeff;
+  background-color: #3ef39f;
   color: #fff;
   font-size: 0.32rem;
   border-radius: 0.133333rem;
@@ -52,7 +52,7 @@ body {
 }
 
 .mainMessage {
-  height: 3.466667rem;
+  height: 2.32rem;
   width: 9.2rem;
   background-color: rgba(255,255,255,.5);
   margin: 0.733333rem auto;
@@ -93,19 +93,8 @@ body {
   color: #7e8787;
 }
 
-.mainMessage .teacher {
-  height: 1.146667rem;
-  width: 8.64rem;
-  margin: 0 auto;
-}
-
-.mainMessage .teacher label {
-  float: right;
-  color: #7e8787;
-}
-
 .myAnswer {
-  height: 1.146667rem;
+  height: 2.306667rem;
   width: 9.2rem;
   background-color: rgba(255,255,255,.5);
   margin: 0.4rem auto;
@@ -121,6 +110,10 @@ body {
   height: 0.533333rem;
   margin-top: 0.333333rem;
   margin-right: 0.133333rem;
+}
+
+.myAnswer .myQuestion {
+  border-bottom: 0.013333rem solid #d2e5ed;
 }
 
 .myAnswer a {
