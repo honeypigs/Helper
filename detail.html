@@ -36,7 +36,7 @@
 </head>
 <body>
 	<div class="content-wp">
-		<div class="content">
+		<div class="content" questionID="12341234123">
 			<div class="content-top">
 				<img class = "userPic" src="static/img/mainPic.png" alt="">
 				<span class = "userName">
@@ -55,7 +55,7 @@
 				<img src="static/img/exmple.png" alt="">		
 			</div>
 		</div>
-		<div class="comment">
+		<div class="comment" commentID ="123412wqweq34">
 			<a href="userDetail.html">
 				<img class = "userPic" src="static/img/mainPic.png" alt="">
 			</a>
@@ -68,11 +68,11 @@
 				</div>
 				<div class="comment-bottom">
 					<span class = "time">50分钟前</span>
-					<span class="like"><img src="static/img/like.png" alt="">10</span>
+					<span class="like"><img class = "likePic" src="static/img/dislike.png" alt="">10</span>
 				</div>
 			</div>
 		</div>
-		<div class="comment">
+		<div class="comment" commentID ="12341234">
 			<a href="userDetail.html">
 				<img class = "userPic" src="static/img/mainPic.png" alt="">
 			</a>
@@ -85,11 +85,11 @@
 				</div>
 				<div class="comment-bottom">
 					<span class = "time">50分钟前</span>
-					<span class="like"><img src="static/img/like.png" alt="">10</span>
+					<span class="like"><img class = "likePic" src="static/img/dislike.png" alt="">10</span>
 				</div>
 			</div>
 		</div>
-		<div class="comment">
+		<div class="comment" commentID ="12341234">
 			<a href="userDetail.html">
 				<img class = "userPic" src="static/img/mainPic.png" alt="">
 			</a>
@@ -106,20 +106,33 @@
 				</div>
 				<div class="comment-bottom">
 					<span class = "time">50分钟前</span>
-					<span class="like"><img src="static/img/like.png" alt="">10</span>
+					<span class="like"><img class = "likePic" src="static/img/dislike.png" alt="">10</span>
+				</div>
+			</div>
+		</div>
+		<div class="comment" commentID ="12341234">
+			<a href="userDetail.html">
+				<img class = "userPic" src="static/img/mainPic.png" alt="">
+			</a>
+			<div class="commentText">
+				<span class = "userName">
+				老司机一号<label class = "userSex">学姐</label>
+				</span>
+				<div class="comment-main">
+					<p>学弟一枚，想问问关于大一的住宿情况，据说男生都是住在一、五、六、栋啊，条件怎么样啊，几据说男生都是住在一、五、六、栋啊，条件怎么样啊，几人间呢，有没有独立的卫生间浴室等等</p>
+				</div>
+				<div class="comment-pic">
+					<img src="static/img/exmple.png" alt="">
+					<img src="static/img/exmple.png" alt="">		
+				</div>
+				<div class="comment-bottom">
+					<span class = "time">50分钟前</span>
+					<span class="like"><img class = "likePic" src="static/img/dislike.png" alt="">10</span>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="addPics">
-		<div class="pic">
-			<div class="delet">×</div>
-			<img src="static/img/sorry.png" id = "pic" alt="">
-		</div>
-		<div class="pic">
-			<div class="delet">×</div>
-			<img src="static/img/sorry.png" id = "pic" alt="">
-		</div>
 		<div class="add">
 			<input type="file" id = "addPic">
 			<label>+</label>
@@ -133,4 +146,5 @@
 </body>
 <script src="http://a.alipayobjects.com/??amui/zepto/1.1.3/zepto.js,static/fastclick/1.0.6/fastclick.min.js"></script>
 <script>FastClick.attach(document.body);</script>
+<script src = "static/js/detail.js"></script>
 </html>
