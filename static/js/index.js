@@ -5,9 +5,13 @@ window.onload =function () {
 		if(event.target.innerText == "最新问题") {
 			left.className = "top-left click";
 			right.className = "top-right";
+			document.querySelector('.new').style.display = "block";
+			document.querySelector('.hot').style.display = "none";
 		} else if(event.target.innerText == "最热问题") {
 			left.className = "top-left";
 			right.className = "top-right click";
+			document.querySelector('.hot').style.display = "block";
+			document.querySelector('.new').style.display = "none";
 		}
 		$.ajax({
 			  type: 'GET',

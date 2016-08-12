@@ -17,8 +17,7 @@ window.onload = function () {
 			document.querySelectorAll('.comment')[i].addEventListener('click',function(e){
 			if (e.target.className == "likePic") {
 					document.querySelectorAll('.like')[i].innerHTML = '<img class = "likePic click" src="static/img/like.png" alt="">' + (parseInt(document.querySelectorAll('.like')[i].innerText) + 1);
-				} else if (e.target.className == "likePic click"){
-					document.querySelector('.likePic').src = "static/img/dislike.png";
+				} else if (e.target.className == "likePic click"){			
 					document.querySelectorAll('.like')[i].innerHTML = '<img class = "likePic" src="static/img/dislike.png" alt="">' + (parseInt(document.querySelectorAll('.like')[i].innerText) - 1);
 				}
 				/*
@@ -97,6 +96,10 @@ window.onload = function () {
 						displays[i].remove();
 						displays.splice(i,1)
 						add.style.display = "block";
+						pic = $('.pic').toArray();
+						pic.forEach(function(item,index,array){
+							array[index] = array[index].children.pic.src;
+						})
 					})
 				})(i)
 			}
