@@ -2,7 +2,6 @@ window.onload =function () {
 	var left = document.querySelector('.top-left');
 	var right = document.querySelector('.top-right');
 	document.querySelector(".top").addEventListener('click',function (event) {
-		console.log(event.target.innerText);
 		if(event.target.innerText == "最新问题") {
 			left.className = "top-left click";
 			right.className = "top-right";
@@ -10,6 +9,34 @@ window.onload =function () {
 			left.className = "top-left";
 			right.className = "top-right click";
 		}
+		$.ajax({
+			  type: 'GET',
+			  url: '' + e.target.innerText,
+			  dataType: 'json',
+			  timeout: 300,
+			  success: function(data){
+			    
+			  },
+			  error: function(xhr, type){
+			    alert('Ajax error!')
+			  }
+		})
+	})
+
+	$('body').on('touchmove',function (e) {
+		var by = document.querySelector('.click').innerText;
+		$.ajax({
+			  type: 'GET',
+			  url: '' ,
+			  dataType: 'json',
+			  timeout: 300,
+			  success: function(data){
+			    
+			  },
+			  error: function(xhr, type){
+			    alert('Ajax error!')
+			  }
+		})
 	})
 
 	document.querySelector('input').addEventListener('keyup',function (event) {

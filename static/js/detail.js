@@ -11,7 +11,7 @@ window.onload = function () {
 		}
 	})
 
-	for (var i = 0; i <= document.querySelectorAll('.comment').length; i++) {
+	for (var i = 0; i <= document.querySelectorAll('.comment').length - 1; i++) {
 		(function (i) {
 			var like = document.querySelectorAll('.like')[i].innerText;
 			document.querySelectorAll('.comment')[i].addEventListener('click',function(e){

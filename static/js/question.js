@@ -43,7 +43,7 @@ window.onload = function () {
 				newNode.innerHTML = '<div class="delet">×</div><img src="'+e.target.result+'" id = "pic" alt="img">';
 				showPic.insertBefore(newNode,add);
 				pic.push(e.target.result);
-				delets = document.querySelectorAll('.delet');
+				delets = $('.delet');
 				deletPic();
 			}
 			reader.readAsDataURL(file);
@@ -54,6 +54,7 @@ window.onload = function () {
 
 		function deletPic() {
 			display = $('.pic');
+			// delets.one('click',function(e){console.log(e)});
 			for (var i = 0; i <= delets.length - 1; i++	) {
 				(function(i){
 					delets[i].addEventListener('click',function (event) {
@@ -62,6 +63,10 @@ window.onload = function () {
 						displays[i].remove();
 						displays.splice(i,1)
 						add.style.display = "block";
+						pic = $('.pic').toArray();
+						pic.forEach(function(item,index,array){
+							array[index] = array[index].children.pic.src;
+						})
 					})
 				})(i)
 			}
